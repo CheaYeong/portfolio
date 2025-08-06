@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: none;
+}
+
+html{
+    font-size: 62.5%;
+    font-weight: 400;
+} /* 기본 폰트 사이즈 1rem = 10px */
+
+
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: disc;
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+}
+
+.flex{
+    display: flex;
+}
+
+h2{
+    font-size: 6rem;
+    font-weight: 900;
+    margin:50px 0px 40px;
+}
+
+.medi40{
+    font-size: 4rem;
+}
+
+.black64{
+    font-size: 6.4rem;
+    font-weight: 900;
+}
+
+.black70{
+    font-size: 7rem;
+    font-weight: 900;
+}
+
+
+.medi16{
+    font-size: 1.6rem;
+    color: #969696;
+}
+
+.medi18{
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+    padding-top: 50px;
+}
+
+.bold26{
+    font-size: 2.6rem;
+    line-height: 5.2rem;
+    font-weight: 700;
+    color: black;
+}
+
+@media screen and (max-width: 1500px){
+h2{
+    font-size: 4rem;
+    font-weight: 900;
+    margin:50px 0px 40px;
+}
+
+li{
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+}
+
+.medi40{
+    font-size: 3rem;
+}
+
+.black64{
+    font-size: 5.4rem;
+    font-weight: 900;
+}
+
+.black70{
+    font-size: 5.5rem;
+    font-weight: 900;
+}
+
+
+.medi16{
+    font-size: 1.2rem;
+    color: #969696;
+}
+
+.medi18{
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    padding-top: 50px;
+}
+
+.bold26{
+    font-size: 2rem;
+    line-height: 4rem;
+}
+
+}
