@@ -16,6 +16,9 @@ $(document).ready(function(){
         $(this).css("cursor", "auto");
     });
 
+    $('.homeLogo').click(function(){
+        $( 'html, body' ).stop().animate( { scrollTop : 0 }, 1000 ) 
+    });
 
 
     // nav event
