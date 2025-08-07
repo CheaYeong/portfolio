@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
 </head>
 <body>
 
     <header class="flex">
         <h1>
-            <a href="" class="flex">
+            <a href="#home" class="flex homeLogo">
                 <img src="./img/logo.png" alt="logo">
             </a>
         </h1>
@@ -36,19 +37,21 @@
     <main>
         <section id="home">
         <img class="main_img" src="./img/main_img.png" alt="">
-        <div id="homeTitle_wrap">
+        <div data-aos="fade-up" data-aos-duration="2500" id="homeTitle_wrap">
             <p class="years">2025</p>
             <p class="port_text">Portfolio</p>
             <div id="homeImg"></div>
         </div>
 
-            <div id="homeindex_wrap" class="flex">
+            <div id="homeindex_wrap" class="flex" data-aos="fade-right"
+                data-aos-offset="500"
+                data-aos-easing="ease-in-sine">
                 <div id = "homearrow"></div>
                 <div id = "introText">
                     <p>안녕하세요,<br>
                         <span class="bold">디자이너 서채영</span>입니다</p>
                 </div>
-                <div class="circle"></div>
+                <div data-aos="fade-right" class="circle"></div>
                 
             </div>
 
@@ -56,11 +59,11 @@
         </section>
 
         <section id="about">
-            <div id="aboutTextWrap">
+            <div id="aboutTextWrap" data-aos="fade-right">
                 <p>소통하며 최선의 결과를 만드는,</p>
                 <p class="point"><span>유연하고 ‘빠른’ 디자이너 서채영</span> 입니다</p>
             </div>
-            <div id="aboutBoxWrap" class="flex">
+            <div id="aboutBoxWrap" class="flex" data-aos="fade-up">
                 <div>
                     <p>프로필</p>
                     <ul>
@@ -97,7 +100,8 @@
 
             </div>
         </section>
-        <section id="skill">
+        <section id="skill"  data-aos="fade-up"
+        data-aos-duration="2500">
             <div class="sudTitle flex">
             <h2>SKILL</h2>
             <img src="./img/도형-형광.png" alt="img">
@@ -141,7 +145,7 @@
                     </div>
                     <div class="skillCircleBox">
                         <p class="tool">#피그마</p>
-                        <p class="toolSubtitle">UI/UX 디자인,<br>
+                        <p class="toolSubtitle">UI/UX 디자인<br>
                             프로토타입 제작<br>
                             웹사이트 디자인,<br>
                             협업 프로젝트 관리
@@ -159,19 +163,21 @@
                     <div class="skillCircleBox">
                         <p class="tool">#JavaScript/<br>
                             jQuery</p>
-                        <p class="toolSubtitle">동적 이벤트 구현
+                        <p class="toolSubtitle">동적 이벤트 구현,<br>
+                            데이터 처리
                             <div class="skillCircle"></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="project" class="flex">
+        <section id="project" class="flex"  data-aos="fade-up"
+        data-aos-duration="2500">
             <div class="projectCircle flex">
                 <p class = "firstNum">01</p>
                 <p class = "secondtNum">02</p>
             </div>
-            <div class="projectTextWrap">
+            <div class="projectTextWrap" >
                 <div class="sudTitle flex">
                     <h2>PROJECT</h2>
                     <img src="./img/도형-형광.png" alt="img">
@@ -194,7 +200,8 @@
             </article>
         </section>
 
-        <section id="project2" class="flex">
+        <section id="project2" class="flex"  data-aos="fade-up"
+        data-aos-duration="2500">
             <div class="projectCircle flex">
                 <p class = "firstNum">02</p>
                 <p class = "secondtNum">02</p>
@@ -214,14 +221,15 @@
                     2025 공예주간 사이트를 리디자인 하였습니다.  공생공락(共生工樂, Living Together Craft Together)을 주제로 창작에 필요한 활력, 에너지를 주는 오렌지 컬러를 포인트로 활용하여 필요한 정보에 쉽게 접근이 가능하도록 디자인하였습니다.  또한, 어떤 디바이스를 써도 용이하게 이용할 수 있도록 반응형으로 제작 되었습니다.
                 </p>
                 <div class="viewBtnWrap">
-                <a class="viewBtn" href="" target='_blank'>View more</a>
+                <a class="viewBtn" href="https://cheayeong.github.io/teamproject/index.html" target='_blank'>View more</a>
                 </div>
 
             </div>
             <article id ="projectimgWrap2">
             </article>
         </section>
-        <section id="work">
+        <section id="work" data-aos="fade-up"
+        data-aos-duration="2500">
             <img class="work_img" src="./img/main_img.png" alt="">
             <div class="workHeader flex">
             <div class="sudTitle flex">
@@ -252,7 +260,8 @@
             </div>
         </section>
         
-        <section id="thankTo">
+        <section id="thankTo" data-aos="fade-up"
+        data-aos-duration="2500">
 
         <div class="thanksMain flex">
             <div class="thanksText">
@@ -296,6 +305,10 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="./js/script.js"></script>
 </body>
 </html>
